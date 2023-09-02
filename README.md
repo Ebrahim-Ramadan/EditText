@@ -9,7 +9,6 @@ This is a simple Go web application that serves editable content and allows upda
 - [Explanation](#Explanation)
 - [Endpoints](#endpoints)
 - [Security Considerations](#security-considerations)
-- [License](#license)
 
 ## Installation
 
@@ -37,3 +36,6 @@ This web application provides two endpoints:
 Returns the current editable content as HTML.
 ```/update (POST)```
 Allows updating the content by sending a POST request with the new content as a content parameter.
+
+## Security Considerations
+this example can only be used in dev env, but in my produciton phase it'd literally be a disaster if you don't use any kind of libraried for such security
