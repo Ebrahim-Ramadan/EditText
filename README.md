@@ -26,7 +26,10 @@ The React component (Tiptap in your initial code) is responsible for creating th
 The Go main.go application, in this context, primarily serves as the backend server that handles network communication. It provides endpoints (e.g., /content and /update) that the React component can communicate with. When a user interacts with the React component (e.g., updates content), the React component sends HTTP requests to the Go server, and the server processes these requests and updates the content as needed.
 
 This separation of concerns is a common architectural approach in web applications, where you have a frontend (React in this case) responsible for the user interface and user interactions, and a backend (Go in this case) responsible for handling data and network communication.
-
+but we can run the main.go by 
+```
+curl -X POST -d "content=<strong>New Content</strong>" http://localhost:8080/update
+```
 ## Usage
 This web application provides two endpoints:
 
